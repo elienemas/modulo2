@@ -1,33 +1,18 @@
-// const input  = require("readline-sync")
-// // esta entrada permite que a variável input utilize a readline-sync. O comando require é usado antes da dependência
 
-// console.log("Seja bem vindo(a)! Vamos fazer seu login")
-
-// const idade = input.question ("Insira sua idade:") 
- 
-
-// if (idade >= 16 && idade <18) {
-//     console.log('pode entrar, mas não pode beber')
-//   } else if (idade >=18) {
-//       console.log("Pode entrar e bora beber")
-//   }  else    {
-//     console.log('entrada permitida apenas para maiores de idade.')
-//   }
-
-// PROJETO PISTA DE AUTORAMA
 
 const input = require("readline-sync");
 
-console.log("Seja bem vindo(a)! Vamos fazer seu login")
+console.log("Seja bem vindo(a) Ao Auto Cart! Vamos fazer seu login")
 
 const idade = input.question("Insira sua idade:") 
-const carteira = input.question("Voce tem habilitacao? Digite Sim ou Nao: ") 
-
+const carteira = input.question("Voce tem habilitacao? Digite sim ou nao: ") 
 
 if (idade>= 18 && carteira === "sim" ) {
-         console.log("pode entrar, e pode dirigir")
-} else  {
-    console.log("Pode entrar, mas nao pode dirigir")
-};
-         
-//
+  console.log("Aproveite e boa corrida")
+ } else if (idade>=18 && carteira === "nao" )  {
+        console.log("Divirta-se, mas voce não tem autorizacao para dirigir")
+} else if (idade<18 && carteira === "nao" ) {
+    console.log("Divirta-se, mas voce não tem autorizacao para dirigir")
+   } else {
+      console.log("Voce nao digitou uma opcao valida")
+  };

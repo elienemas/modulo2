@@ -4,5 +4,6 @@ let user = {
       email: 'elienemas@gmail.com'
     }
   }
-  console.log(user)
-  console.log({user})
+  console.log(user);
+  console.log({user});
+

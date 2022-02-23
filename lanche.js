@@ -50,4 +50,4 @@ if (codlanche == "cod5") {
 //total = parseFloat(codlanche) * quant
 
 //console.log("Sua conta deu: ", total)
-  
+   
